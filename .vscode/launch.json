@@ -1,0 +1,63 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Attach to Process",
+      "type": "jdk",
+      "request": "attach",
+      "processId": "${command:jdk.java.attachDebugger.pickProcess}"
+    },
+    {
+      "type": "java",
+      "name": "Load File",
+      "request": "launch",
+      "mainClass": "${file}",
+      "args": "load test.idx output.csv"
+    },
+    {
+      "type": "java",
+      "name": "Create File",
+      "request": "launch",
+      "mainClass": "${file}",
+      "args": "create test.idx"
+    },
+    {
+      "type": "java",
+      "name": "Search File",
+      "request": "launch",
+      "mainClass": "${file}",
+      "args": "search test.idx 15"
+    },
+    {
+      "type": "java",
+      "name": "Insert File",
+      "request": "launch",
+      "mainClass": "${file}",
+      "args": "insert test.idx 75 50"
+    },
+    {
+      "type": "java",
+      "name": "Print File",
+      "request": "launch",
+      "mainClass": "${file}",
+      "args": "print test.idx"
+    },
+    {
+      "type": "java",
+      "name": "Extract File",
+      "request": "launch",
+      "mainClass": "${file}",
+      "args": "extract test.idx output.csv"
+    },
+    {
+      "type": "java",
+      "name": "Project3",
+      "request": "launch",
+      "mainClass": "project3.Project3",
+      "projectName": "project3"
+    }
+  ]
+}
